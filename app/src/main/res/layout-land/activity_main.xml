@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myIMEI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="Fetching My Phone Data..."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/myInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myIMEI"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="Fetching My Phone Data..."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/myCharging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myInternet"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="Fetching My Phone Data..."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/myBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/myCharging"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Fetching My Phone Data..."
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/myBattery"
+        android:text="Fetching My Phone Data..."
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/myTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/myIMEI"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="Time"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/displayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myTimeStamp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="73dp"
+        android:layout_toRightOf="@+id/myCharging"
+        android:text="Display Manually" />
+
+
+</RelativeLayout>
